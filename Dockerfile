@@ -70,8 +70,9 @@ USER root
 # Copy init scripts
 # COPY docker-entrypoint.sh /entrypoint.sh
 
+# uncomment as it is incompatible with railway
 # provide container inside image for data persistence
-VOLUME ["/var/www/html"]
+#VOLUME ["/var/www/html"]
 
 # ENTRYPOINT ["/entrypoint.sh"]
 # CMD ["apache2-foreground"]
