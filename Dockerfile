@@ -67,9 +67,6 @@ RUN (crontab -l; echo "* * * * * cd /var/www/html;/usr/local/bin/php bin/grav sc
 # Return to root user
 USER root
 
-RUN bin/gpm selfupgrade -f
-RUN bin/gpm install admin
-
 # Copy init scripts
 # COPY docker-entrypoint.sh /entrypoint.sh
 
